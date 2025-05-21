@@ -8,8 +8,8 @@ const Forum = () => {
   const [new_topic_desc, set_new_topic_desc] = useState("");
   const [is_create, set_is_create] = useState(false);
   const [user_names, set_user_names] = useState({});
-  const [current, set_curr] = useState(1);  // Current page
-  const max = 5;  // Max number of posts per page
+  const [current, set_curr] = useState(1);
+  const max = 5;
 
   const user = JSON.parse(localStorage.getItem("user"));
   const username = user ? user.username : "Unknown user";
